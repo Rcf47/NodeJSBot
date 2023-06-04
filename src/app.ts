@@ -18,6 +18,7 @@ class Bot {
   }
 
   init() {
+    console.log("start server")
     this.commands = [new StartCommand(this.bot)];
     for (const command of this.commands) {
       command.handle();
